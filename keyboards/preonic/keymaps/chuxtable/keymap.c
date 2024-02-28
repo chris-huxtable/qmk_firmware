@@ -74,9 +74,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |Sleep |      |      |      |      |      |      |      |      |      |      | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Tab  | Home |      |  |   |  \   |  -   |   _  |   /  |   |  |      | End  | Del  |
+ * | Tab  | Home |      |  \   |  |   |  -   |   _  |   |  |   /  |      | End  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |   ~  | Pg Up|  <   |  {   |  (   |  [   |   ]  |   )  |   }  |   >  | Pg Dn|  |   |
+ * |   ~  | Pg Up|  [   |  (   |  {   |  <   |   >  |   }  |   )  |   ]  | Pg Dn|  |   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |      |      |      |  +   |  -   |   _  |   =  |      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -85,19 +85,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LOWER] = LAYOUT_preonic_grid(
   SLP_DSP, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_BSPC,
-  KC_TAB,  KC_HOME, XXXXXXX, KC_PIPE, KC_BSLS, KC_PMNS, KC_UNDS, KC_PSLS, KC_PIPE, XXXXXXX, KC_END,  KC_DEL,
-  KC_TILD, KC_PGUP, KC_LABK, KC_LCBR, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_RCBR, KC_RABK, KC_PGDN, KC_PIPE,
+  KC_TAB,  KC_HOME, XXXXXXX, KC_BSLS, KC_PIPE, KC_PMNS, KC_UNDS, KC_PIPE, KC_PSLS, XXXXXXX, KC_END,  KC_DEL,
+  KC_TILD, KC_PGUP, KC_LABK, KC_LPRN, KC_LCBR, KC_LBRC, KC_RPRN, KC_RBRC, KC_RCBR, KC_RABK, KC_PGDN, KC_PIPE,
   _______, XXXXXXX, XXXXXXX, XXXXXXX, KC_PPLS, KC_PMNS, KC_UNDS, KC_EQL,  XXXXXXX, XXXXXXX, XXXXXXX, _______,
   _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLU, KC_VOLD, KC_MPLY
 ),
 
 /* Raise
  * ,-----------------------------------------------------------------------------------.
- * | Esc  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  |  F10 | Bksp |
+ * | LkDp |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  |  F10 | Bksp |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Tab  | Home |      |  |   |  \   |  -   |   _  |   /  |   |  |      | End  | Del  |
+ * | Tab  | Home |      |  \   |  |   |  -   |   _  |   |  |   /  |      | End  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |   ~  | Pg Up|  [   |  {   |  (   |  <   |   >  |   )  |   }  |   ]  | Pg Dn|  \   |
+ * |   ~  | Pg Up|  [   |  (   |  {   |  <   |   >  |   }  |   )  |   ]  | Pg Dn|  \   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |      |      |      |  +   |  -   |   _  |   =  |      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -106,8 +106,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT_preonic_grid(
   LCK_DSP,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_BSPC,
-  KC_TAB,  KC_HOME, XXXXXXX, KC_PIPE, KC_BSLS, KC_PMNS, KC_UNDS, KC_PSLS, KC_PIPE, XXXXXXX, KC_END,  KC_DEL,
-  KC_TILD, KC_PGUP, KC_LABK, KC_LCBR, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_RCBR, KC_RABK, KC_PGDN, KC_BSLS,
+  KC_TAB,  KC_HOME, XXXXXXX, KC_BSLS, KC_PIPE, KC_PMNS, KC_UNDS, KC_PIPE, KC_PSLS, XXXXXXX, KC_END,  KC_DEL,
+  KC_TILD, KC_PGUP, KC_LABK, KC_LPRN, KC_LCBR, KC_LBRC, KC_RPRN, KC_RBRC, KC_RCBR, KC_RABK, KC_PGDN, KC_BSLS,
   _______, XXXXXXX, XXXXXXX, XXXXXXX, KC_PPLS, KC_PMNS, KC_UNDS, KC_EQL,  XXXXXXX, XXXXXXX, XXXXXXX, _______,
   _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLU, KC_VOLD, KC_MPLY
 
