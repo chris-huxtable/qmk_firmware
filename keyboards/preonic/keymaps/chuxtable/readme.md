@@ -2,6 +2,17 @@
 
 Simplified and reduced keymaps.
 
+## Compiling
+
+```
+make preonic/rev3:chuxtable
+```
+
+## Installing
+
+```
+make preonic/rev3:chuxtable:dfu-util
+```
 
 ## Qwerty
 
