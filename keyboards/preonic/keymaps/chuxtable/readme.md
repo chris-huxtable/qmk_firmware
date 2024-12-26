@@ -2,15 +2,27 @@
 
 Simplified and reduced keymaps.
 
+## Environment
+
+Make sure you have `qmk` installed:
+```shell
+brew install qmk/qmk/qmk
+```
+
+Make sure the environment is setup
+```shell
+qmk setup
+```
+
 ## Compiling
 
-```
+```shell
 make preonic/rev3:chuxtable
 ```
 
 ## Installing
 
-```
+```shell
 make preonic/rev3:chuxtable:dfu-util
 ```
 
